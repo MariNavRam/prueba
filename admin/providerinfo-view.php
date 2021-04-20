@@ -16,7 +16,7 @@
     <div class="row">
         <div class="col-xs-12">
             <div class="container-form-admin">
-                <h3 class="text-primary text-center">Pago a proveedor</h3>
+                <h3 class="text-primary text-center">Actualizae proveedor</h3>
                 <?php
                     $code=$_GET['code'];
                     $proveedor=ejecutarSQL::consultar("SELECT * FROM proveedor WHERE NITProveedor='$code'");
@@ -37,7 +37,8 @@
                                     <label class="control-label">Cuenta Bancaria</label>
                                     <input class="form-control" type="text" name="prove-cuenta" maxlength="30" required="">
                                 </div>
-                            </div>
+                            </div>   
+
                             <div class="col-xs-12 col-md-6">
                                 <div class="form-group label-floating">
                                     <label class="control-label">Nombre</label>
@@ -78,6 +79,7 @@
                                     </select>
                                 </div>
                             </div>
+                          
                         </div>
                     </div>
                     <p class="text-center"><button type="submit" class="btn btn-primary btn-raised">Actualizar proveedor</button></p>

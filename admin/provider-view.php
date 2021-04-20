@@ -70,7 +70,7 @@
                                     <option value="Procesando pago">Procesando Pago</option>
                                     <option value="Pagado">Pagado</option>
                                     </select>
-                                </div>
+                             </div>
                         </div>
                     </div>
                     <p class="text-center"><button type="submit" class="btn btn-primary btn-raised">Agregar proveedor</button></p>

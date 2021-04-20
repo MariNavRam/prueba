@@ -8,10 +8,13 @@ $nameProve=consultasSQL::clean_string($_POST['prove-name']);
 $dirProve=consultasSQL::clean_string($_POST['prove-dir']);
 $telProve=consultasSQL::clean_string($_POST['prove-tel']);
 $webProve=consultasSQL::clean_string($_POST['prove-web']);
+$pagoProveUp=consultasSQL::clean_string($_POST['prove-pago']);
+$estadoProveUp=consultasSQL::clean_string($_POST['prove-estado']);
+$cuentaProveUp=consultasSQL::clean_string($_POST['prove-cuenta']);
 
 $verificar=  ejecutarSQL::consultar("SELECT * FROM proveedor WHERE NITProveedor='".$nitProve."'");
 if(mysqli_num_rows($verificar)<=0){
-    if(consultasSQL::InsertSQL("proveedor", "NITProveedor, NombreProveedor, Direccion, Telefono, PaginaWeb", "'$nitProve','$nameProve','$dirProve','$telProve','$webProve'")){
+    if(consultasSQL::InsertSQL("proveedor", "NITProveedor, NombreProveedor, Direccion, Telefono, PaginaWeb,Pago,Estado,Cuenta", "'$nitProve','$nameProve','$dirProve','$telProve','$webProve','$pagoProveUp','$estadoProveUp','$cuentaProveUp'")){
         echo '<script>
             swal({
               title: "Proveedor registrado",
