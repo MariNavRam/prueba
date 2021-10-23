@@ -31,11 +31,42 @@ body{
     background-size: cover;
     background-color: #fff;
 }
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #00c4e7;
+    border-radius: 1rem;
+    border-color: #00db1d;
+  }
+  .divider-custom .divider-custom-line:first-child {
+    margin-right: 1rem;
+  }
+  .divider-custom .divider-custom-line:last-child {
+    margin-left: 1rem;
+  }
+  .divider-custom .divider-custom-icon {
+    color: #00c6e0;
+    font-size: 2rem;
+  }
+  .divider-custom.divider-light .divider-custom-line {
+    background-color: rgb(15, 209, 199);
+  }
+  .divider-custom.divider-light .divider-custom-icon {
+    color: #fff;
+  }
 nav{
     width: 100%;
     position: fixed;
     top: 0px;
-    background-color: #31a9a3;
+    background-color: #176ad6;
     box-shadow: 2px 0px 7px #000;
 	z-index: 50;
 }
@@ -91,15 +122,15 @@ article{
 }
 footer{
     width: 100%;
-    color: #fff;
-    background-color: #333;
+    color: rgb(236, 13, 13);
+    background-color:chocolate;
     padding: 40px 0px;
 }
 .text-footer{
-    color: #ef6a6a;
+    color: #0b0beb;
 }
 footer a{
-    color: #fff;
+    color: rgb(240, 17, 17);
 }
 .tittles-pages-logo{
     font-family: "FontFamilyLogo";
@@ -125,25 +156,25 @@ footer a{
 }
 /* ========================================= index styles ======================================*/
 #container-page-index{
-    background-image: url("../assets/img/font-index.JPG");
+    background-image: url("../assets/img/d.jpg");
 }
 #new-prod-index{
-    background-color: rgba(255,255,255,.9);
+    background-color: rgba(207, 83, 10, 0.9);
 }
 #reg-info-index{
-    background-color: rgba(255,255,255,.9);
-    border-top: 1px solid rgba(183, 165, 165,.2);
+    background-color: rgba(209, 19, 19, 0.9);
+    border-top: 1px solid rgba(185, 24, 24, 0.2);
 }
 #distribuidores-index{
-    background-color: rgba(186, 188, 171,.87);
-    color: #000;
+    background-color: rgba(176, 197, 15, 0.87);
+    color: rgb(190, 29, 29);
 }
 /* ========================================= product styles ======================================*/
 #container-page-product{
-    background-image: url(../assets/img/font-registration.JPG);
+    background-image: url(../assets/img/e.jpg);
 }
 #store, #infoproduct, #container-pedido{
-    background-color: rgba(255,255,255,.97);
+    background-color: rgba(192, 124, 124, 0.97);
     min-height: 900px;
 }
 .img-product{
@@ -153,21 +184,21 @@ footer a{
 }
 /* ========================================= registration styles ======================================*/
 #container-page-registration{
-    background-image: url(../assets/img/font-registration.jpg);
+    background-image: url(../assets/img/d.jpg);
 }
 #form-registration{
     min-height: 900px;
-    background-color: rgba(255,255,255,.95);
+    background-color: rgba(185, 29, 29, 0.95);
     padding-top: 120px;
 }
 #container-form{
     padding: 20px;
     border-radius: 7px;
-    border: 2px dashed lightblue;
+    border: 2px dashed rgb(230, 141, 9);
 }
 /* ========================================= configAdmin styles ======================================*/
 #container-page-configAdmin{
-    background-image: url(../assets/img/font-registration.JPG);
+    background-image: url(../assets/img/e.JPG);
 }
 #prove-product-cat-config{
     background-color: #fff;

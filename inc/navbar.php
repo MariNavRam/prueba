@@ -5,14 +5,16 @@
 <nav id="navbar-auto-hidden">
         <div class="row hidden-xs">
             <div class="col-xs-4">
-                <p class="text-navbar tittles-pages-logo">InsideTheBook</p>
+                <p class="text-navbar tittles-pages-logo">MyLibrary</p>
             </div>
             <div class="col-xs-8">
               <div class="contenedor-tabla pull-right">
                 <div class="contenedor-tr">
-                  <a href="index.php" class="table-cell-td">Inicio</a>
-                  <a href="product.php" class="table-cell-td">Productos</a>
+                  <a href="index.php" class="table-cell-td">Home</a>
+                  <a href="index.php" class="table-cell-td">Nosotros</a>
+                  <a href="product.php" class="table-cell-td">Libros</a>
                   <?php
+                  
                       if(!$_SESSION['nombreAdmin']==""){
                           echo ' 
                               <a href="carrito.php" class="table-cell-td">Carrito</a>
@@ -24,7 +26,7 @@
                       }else if(!$_SESSION['nombreUser']==""){
                           echo ' 
 
-                              <a href="pedido.php" class="table-cell-td">Pedido</a>
+                              <a href="pedido.php" class="table-cell-td">MyPedido</a>
                               <a href="carrito.php" class="table-cell-td">Carrito</a>
                               <a href="#!" class="table-cell-td exit-system">
                               <i class="fa fa-user"></i>&nbsp;&nbsp;'.$_SESSION['nombreUser'].'
@@ -36,7 +38,7 @@
                       }else{
                           echo ' 
 
-                          <a href="registration.php" class="table-cell-td">Registro</a>
+                          <a href="registration.php" class="table-cell-td">Registrarme</a>
                               <a href="#" class="table-cell-td" data-toggle="modal" data-target=".modal-login">
                                   <i class="fa fa-user"></i>&nbsp;&nbsp;Login
                               </a>
@@ -96,12 +98,12 @@
                     <input type="password" class="form-control" name="clave-login" required="">
                 </div>
 
-                <p>¿Cómo iniciaras sesión?</p>
+                <p>Iniciar sección como...</p>
                
                 <div class="radio">
                   <label>
                       <input type="radio" name="optionsRadios" value="option1" checked="">
-                      Usuario
+                      Usuario/Cliente
                   </label>
                </div>
 
@@ -125,22 +127,22 @@
     
     <div id="mobile-menu-list" class="hidden-sm hidden-md hidden-lg">
         <br>
-        <h3 class="text-center tittles-pages-logo">InsideTheBook</h3>
+        <h3 class="text-center tittles-pages-logo">MyLibrary</h3>
         <button class="btn btn-default button-mobile-menu" id="button-close-mobile-menu">
         <i class="fa fa-times"></i>
         </button>
 
         <br><br>
         <ul class="list-unstyled text-center">
-            <li><a href="index.php">Inicio</a></li>
-            <li><a href="product.php">Productos</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="product.php">Libros</a></li>
             <li><a href="carrito.php">Carrito</a></li>
             <?php 
                 if(!$_SESSION['nombreAdmin']==""){
                     echo '<li><a href="configAdmin.php">Administración</a></li>';
                 }elseif(!$_SESSION['nombreUser']==""){
                     echo '
-                    <li><a href="pedido.php">Pedido</a></li>
+                    <li><a href="pedido.php">MyPedido</a></li>
                     <li><a href="#" class="glyphicon glyphicon-cog userConBtn" data-code="'.$_SESSION['UserNIT'].'"> Configuraciones</a></li>
                     ';
                 }else{

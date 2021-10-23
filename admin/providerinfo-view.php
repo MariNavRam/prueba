@@ -79,7 +79,6 @@
                                     </select>
                                 </div>
                             </div>
-                          
                         </div>
                     </div>
                     <p class="text-center"><button type="submit" class="btn btn-primary btn-raised">Actualizar proveedor</button></p>

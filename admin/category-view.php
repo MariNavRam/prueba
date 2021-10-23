@@ -4,18 +4,18 @@
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
         <a href="configAdmin.php?view=category">
-            <i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp; Nueva Categoría
+            <i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp; Nuevo Genero
         </a>
     </li>
     <li>
-        <a href="configAdmin.php?view=categorylist"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp; Categoría de productos</a>
+        <a href="configAdmin.php?view=categorylist"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp; Genero Literario</a>
     </li>
 </ul>
 <div class="container">
 	<div class="row">
         <div class="col-xs-12">
             <div class="container-form-admin">
-                <h3 class="text-info text-center">Agregar nueva categoría</h3>
+                <h3 class="text-info text-center">Agregar nuevo genero </h3>
                 <form action="process/regcategori.php" method="POST" class="FormCatElec" data-form="save">
                     <div class="container-fluid">
                         <div class="row">
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-center"><button type="submit" class="btn btn-primary btn-raised">Agregar categoría</button></p>
+                    <p class="text-center"><button type="submit" class="btn btn-primary btn-raised">Agregar genero literario</button></p>
                 </form>
             </div>
         </div>

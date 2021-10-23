@@ -355,7 +355,7 @@ body.stop-scrolling {
   bottom: 17px;
   border-radius: 2px;
   margin-left: -2px;
-  background-color: #5bc0de;
+  background-color: #0f86aa;
 }
 .sweet-alert .sa-icon.sa-info::after {
   content: "";

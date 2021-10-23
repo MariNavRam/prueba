@@ -4,11 +4,11 @@
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
         <a href="configAdmin.php?view=product">
-            <i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp; Nuevo producto
+            <i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp; Nuevo Libro
         </a>
     </li>
     <li>
-        <a href="configAdmin.php?view=productlist"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp; Productos en tienda</a>
+        <a href="configAdmin.php?view=productlist"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp; Libros en tienda </a>
     </li>
 </ul>
 <div class="container">
@@ -20,7 +20,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12">
-                                <legend>Datos básicos</legend>
+                                <legend>Datos del libro</legend>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4">
                               <div class="form-group label-floating">
@@ -30,7 +30,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4">
                               <div class="form-group label-floating">
-                                <label class="control-label">Nombre de producto</label>
+                                <label class="control-label">Nombre del libro</label>
                                 <input type="text" class="form-control" required maxlength="30" name="prod-name">
                               </div>
                             </div>
@@ -105,7 +105,7 @@
                             <div class="col-xs-12">
                                 <legend>Imagen/Foto del producto</legend>
                                 <p class="text-center text-primary">
-                                    Seleccione una imagen/foto en el siguiente campo. Formato de imágenes admitido png y jpg. Tamaño máximo 5MB
+                                    Seleccione una imagen
                                 </p>
                             </div>
                             <div class="col-xs-12">
@@ -119,7 +119,7 @@
                                         </button>
                                       </span>
                                   </div>
-                                    <p class="help-block">Formato de imágenes admitido png y jpg. Tamaño máximo 5MB</p>
+                                    <p class="help-block">Imagen jpg,png</p>
                                 </div>
                             </div>
                         </div>

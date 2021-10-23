@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Pedido</title>
+    <title>MyPedido</title>
     <?php include './inc/link.php'; ?>
 </head>
 <body id="container-page-index">
@@ -9,7 +9,7 @@
     <section id="container-pedido">
         <div class="container">
             <div class="page-header">
-              <h1>PEDIDOS <small class="tittles-pages-logo">InsideTheBook</small></h1>
+              <h1>PEDIDOS <small class="tittles-pages-logo">MyLibrary</small></h1>
 
 
             </div>
@@ -146,9 +146,9 @@
                   <span>Tipo De Envio</span>
                   <select class="form-control" name="tipo-envio" data-toggle="tooltip" data-placement="top" title="Elige El Tipo De Envio">
                       <option value="" disabled="" selected="">Selecciona una opción</option>
-                      <option value="Recoger Por Tienda">Recoger Por Tienda</option>
+                      <option value="Recoger Por Tienda">Recoger en  Tienda</option>
                       <option value="Envio Por Currier">Envio DHL</option>
-                      <option value="Envio Por Paqueteria">Envio UPS</option>
+                      <option value="Envio Por Paqueteria">Envio Redpack </option>
                       <option value="Envio Por Mensajeria">Envio FedEx</option>
                   </select>
                </div>
@@ -166,7 +166,7 @@
                             </button>
                           </span>
                       </div>
-                        <p class="help-block"><small>Tipos de archivos admitidos, imagenes .jpg y .png. Maximo 5 MB</small></p>
+                        <p class="help-block"><small>Tipos de archivos admitidos, imagenes .jpg y .png. Maximo </small></p>
                     </div>
                 <?php else: ?>
                     <div class="form-group">
@@ -177,7 +177,7 @@
                       <span>Tipo De Envio</span>
                       <select class="form-control" name="tipo-envio" data-toggle="tooltip" data-placement="top" title="Elige El Tipo De Envio">
                           <option value="" disabled="" selected="">Selecciona una opción</option>
-                          <option value="Recoger Por Tienda">Recoger Por Tienda</option>
+                          <option value="Recoger Por Tienda">Recoger en  Tienda</option>
                           <option value="Envio Por DHL">Envio DHL</option>
                            <option value="Envio Por FedEx">Envio FedEx</option>
                             <option value="Envio Por UPS">Envio UPS</option>

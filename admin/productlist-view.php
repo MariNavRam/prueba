@@ -4,11 +4,11 @@
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
         <a href="configAdmin.php?view=product">
-            <i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp; Nuevo producto
+            <i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp; Nuevo Libro
         </a>
     </li>
     <li>
-        <a href="configAdmin.php?view=productlist"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp; Productos en tienda</a>
+        <a href="configAdmin.php?view=productlist"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp; Libros</a>
     </li>
 </ul>
 <div class="container">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Registro</title>
+    <title>MyRegistro</title>
     <?php include './inc/link.php'; ?>
 </head>
 <body id="container-page-registration">
@@ -9,7 +9,7 @@
     <section id="form-registration">
         <div class="container">
             <div class="page-header">
-              <h1>REGISTRO <small class="tittles-pages-logo">InsideTheBook</small></h1>
+              <h1>REGISTRO <small class="tittles-pages-logo">MyLibrary</small></h1>
             </div>
             <p class="lead text-center">
 

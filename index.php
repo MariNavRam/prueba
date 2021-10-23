@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>INICIO</title>
+    <title>Store Librery</title>
     <?php include './inc/link.php'; ?>
 </head>
 
@@ -20,16 +20,14 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="./assets/img/sliderbiblioteca.jpg" alt="slider1">
+                <img src="./assets/img/b.jpg" alt="slider1">
                 <div class="carousel-caption">
 
                 </div>
             </div>
             <div class="item">
-                <img src="./assets/img/sliderbi.jpg" alt="slider2">
-                <div class="carousel-caption">
+                <img src="./assets/img/a.jpg" alt="slider2">
 
-                </div>
             </div>
 
         </div>
@@ -37,16 +35,27 @@
         <!-- Controls -->
         <a class="left carousel-control" href="#slider-store" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only">Anterior</span>
         </a>
         <a class="right carousel-control" href="#slider-store" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="sr-only">Siguiente</span>
         </a>
     </section>
     
-
-    <section id="new-prod-index">    
+    
+    <section id="new-prod-index"> 
+    <div class="page-header">
+    <br>
+    <h2 align=center >Nosotros somos....</h2>
+    <br>
+    <p align=center>Una libreria catalgoda como una de las mejores, por sus servicios y atencion,
+        <br>nosotros siempre queremos que nuestros clientes se lleven una grata experiencia tanto en 
+        <br> fisico como en linea. Siempre teniendo los más recientes libros.
+        <br>
+        <br>
+    </p>
+</div>   
          <div class="container">
           <div class="col-xs-12 col-md-4 col-md-offset-4">
                      <form action="./searchIndex.php" method="GET">
@@ -65,9 +74,45 @@
 
             <div class="page-header">
             <br>
-                <h1>Últimos <small>productos agregados</small></h1>
+                <h2>Libros Más Vendidos</h1>
 
             </div>
+            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/maquina.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img-products/00002.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img-products/00011.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assents/img-products/00021.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <
+
+
+
 
             <div class="row">
               	<?php
@@ -77,56 +122,16 @@
                   $totalproductos = mysqli_num_rows($consulta);
                   if($totalproductos>0){
                       while($fila=mysqli_fetch_array($consulta, MYSQLI_ASSOC)){
-                ?>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                     <div class="thumbnail">
-                       <img class="img-product" src="assets/img-products/<?php if($fila['Imagen']!="" && is_file("./assets/img-products/".$fila['Imagen'])){ echo $fila['Imagen']; }else{ echo "default.png"; } ?>">
-                       <div class="caption">
-                       		<h3><?php echo $fila['Marca']; ?></h3>
-                            <p><?php echo $fila['NombreProd']; ?></p>
-                            <?php if($fila['Descuento']>0): ?>
-                             <p>
-                             <?php
-                             $pref=number_format($fila['Precio']-($fila['Precio']*($fila['Descuento']/100)), 2, '.', '');
-                             echo $fila['Descuento']."% descuento: $".$pref; 
-                             ?>
-                             </p>
-                             <?php else: ?>
-                              <p>$<?php echo $fila['Precio']; ?></p>
-                             <?php endif; ?>
-                        <p class="text-center">
-                            <a href="infoProd.php?CodigoProd=<?php echo $fila['CodigoProd']; ?>" class="btn btn-primary btn-sm btn-raised btn-block"><i class="fa fa-plus"></i>&nbsp; Detalles</a>
-                        </p>
-                       </div>
-                     </div>
-                </div>     
-                <?php
+       
                      }   
                   }else{
-                      echo '<h2>No hay productos registrados en la tienda</h2>';
+                      echo '<h2>No se han registrado lirbos</h2>';
                   }  
               	?>  
             </div>
          </div>
     </section>
-    <section id="reg-info-index">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 text-center">
-                   <article style="margin-top:5%;">
-                        <p><i class="fa fa-users fa-4x"></i></p>
-                        <h3>Registrate</h3>
-                        <p>Registrate como cliente de <span class="tittles-pages-logo">InsideTheBook</span> en un sencillo formulario para poder completar tus pedidos</p>
-                        <p><a href="registration.php" class="btn btn-info btn-raised btn-block">Registrarse</a></p>   
-                   </article>
-                </div>
-
-                <div class="col-xs-12 col-sm-6">
-                    <img src="assets/img/Libro.png" alt="Smart-TV" class="img-responsive" style="width: 70%; display: block; margin: 0 auto;">
-                </div>
-            </div>
-        </div>
-    </section>
+   
 
     <?php include './inc/footer.php'; ?>
 </body>

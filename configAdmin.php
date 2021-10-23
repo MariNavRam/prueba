@@ -14,13 +14,13 @@
     <section id="prove-product-cat-config">
         <div class="container">
           <div class="page-header">
-            <h1>Panel de administración <small class="tittles-pages-logo">InsideTheBook</small></h1>
+            <h1>Panel de administración <small class="tittles-pages-logo">MyLibrary</small></h1>
           </div>
           <!--====  Nav Tabs  ====-->
           <ul class="nav nav-tabs nav-justified" style="margin-bottom: 15px;">
             <li>
               <a href="configAdmin.php?view=product">
-                <i class="fa fa-cubes" aria-hidden="true"></i> &nbsp; Productos
+                <i class="fa fa-cubes" aria-hidden="true"></i> &nbsp; Libros
               </a>
             </li>
             <li>
@@ -31,7 +31,7 @@
 
             <li>
               <a href="configAdmin.php?view=category">
-                <i class="fa fa-shopping-basket" aria-hidden="true"></i> &nbsp; Categorías
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i> &nbsp; Genero Literario
               </a>
             </li>
             <li>

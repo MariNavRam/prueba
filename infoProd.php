@@ -6,7 +6,7 @@ include './library/consulSQL.php';
 <html lang="es">
 
 <head>
-    <title>Productos</title>
+    <title>Libros</title>
     <?php include './inc/link.php'; ?>
 </head>
 
@@ -16,7 +16,7 @@ include './library/consulSQL.php';
         <div class="container">
             <div class="row">
                 <div class="page-header">
-                    <h1>DETALLE DE PRODUCTO <small class="tittles-pages-logo">InsideTheBook</small></h1>
+                    <h1>DETALLES DEL LIRBO <small class="tittles-pages-logo">MyLibrary</small></h1>
                 </div>
                 <?php 
                     $CodigoProducto=consultasSQL::clean_string($_GET['CodigoProd']);
@@ -24,7 +24,7 @@ include './library/consulSQL.php';
                     while($fila=mysqli_fetch_array($productoinfo, MYSQLI_ASSOC)){
                         echo '
                             <div class="col-xs-12 col-sm-6">
-                                <h3 class="text-center">Información de producto</h3>
+                                <h3 class="text-center">Información de libros</h3>
                                 <br><br>
                                 <h4><strong>Nombre: </strong>'.$fila['NombreProd'].'</h4><br>
                                 <h4><strong>Precio: </strong>$'.number_format(($fila['Precio']-($fila['Precio']*($fila['Descuento']/100))), 2, '.', '').'</h4><br>

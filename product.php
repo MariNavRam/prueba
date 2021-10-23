@@ -5,7 +5,7 @@ include './library/consulSQL.php';
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Productos</title>
+    <title>Libros</title>
     <?php include './inc/link.php'; ?>
 </head>
 <body id="container-page-product">
@@ -14,7 +14,7 @@ include './library/consulSQL.php';
        <br>
         <div class="container">
             <div class="page-header">
-              <h1>PRODUCTOS <small class="tittles-pages-logo">InsideTheBook</small></h1>
+              <h1>Libros <small class="tittles-pages-logo">My Library</small></h1>
             </div>
             <?php
               $checkAllCat=ejecutarSQL::consultar("SELECT * FROM categoria");

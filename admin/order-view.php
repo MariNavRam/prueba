@@ -6,7 +6,7 @@
         <div class="col-xs-12">
             <br><br>
             <div class="panel panel-info">
-                <div class="panel-heading text-center"><h4>Pedidos de la tienda</h4></div>
+                <div class="panel-heading text-center"><h4>Pedidos de la libreria</h4></div>
                 <div class="table-responsive">
                     <table class="table table-striped table-hover">
                         <thead class="">

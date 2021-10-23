@@ -5,7 +5,7 @@ include './library/consulSQL.php';
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Productos</title>
+    <title>Libros</title>
     <?php include './inc/link.php'; ?>
 </head>
 <body id="container-page-product">
@@ -14,7 +14,7 @@ include './library/consulSQL.php';
        <br>
         <div class="container">
             <div class="page-header">
-              <h1>BÚSQUEDA DE PRODUCTOS <small class="tittles-pages-logo">InsideTheBook</small></h1>
+              <h1>BÚSQUEDA DE LIBROS <small class="tittles-pages-logo">MyLibrary</small></h1>
             </div>
             <div class="container-fluid">
               <div class="row">
@@ -23,7 +23,7 @@ include './library/consulSQL.php';
                     <div class="form-group">
                       <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
-                        <input type="text" id="addon1" class="form-control" name="term" required="" title="Escriba nombre o marca del producto">
+                        <input type="text" id="addon1" class="form-control" name="term" required="" title="Escriba titulo o género del libro a buscar">
                         <span class="input-group-btn">
                             <button class="btn btn-info btn-raised" type="submit">Buscar</button>
                         </span>

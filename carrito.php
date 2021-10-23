@@ -9,7 +9,7 @@
     <section id="container-pedido">
         <div class="container">
             <div class="page-header">
-              <h1>CARRITO DE COMPRAS <small class="tittles-pages-logo">InsideTheBook</small></h1>
+              <h1>CARRITO DE COMPRAS <small class="tittles-pages-logo">MyLibrary</small></h1>
             </div>
             <br><br><br>
             <div class="row">

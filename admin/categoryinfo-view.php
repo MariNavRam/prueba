@@ -4,18 +4,18 @@
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
         <a href="configAdmin.php?view=category">
-            <i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp; Nueva Categoría
+            <i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp; Nuevo Genero Literario
         </a>
     </li>
     <li>
-        <a href="configAdmin.php?view=categorylist"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp; Categoría de productos</a>
+        <a href="configAdmin.php?view=categorylist"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp;Genero de libros</a>
     </li>
 </ul>
 <div class="container">
 	<div class="row">
         <div class="col-xs-12">
             <div class="container-form-admin">
-                <h3 class="text-info text-center">Actualizar datos de categoría</h3>
+                <h3 class="text-info text-center">Actualizar datos de genero literario</h3>
                 <?php
                 	$code=$_GET['code'];
                 	$categoria=ejecutarSQL::consultar("SELECT * FROM categoria WHERE CodigoCat='$code'");
@@ -45,7 +45,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-center"><button type="submit" class="btn btn-primary btn-raised">Actualizar categoría</button></p>
+                    <p class="text-center"><button type="submit" class="btn btn-primary btn-raised">Actualizar genero literario</button></p>
                 </form>
             </div>
         </div>

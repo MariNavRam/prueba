@@ -22,7 +22,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-12">
-                            	<p class="text-primary text-center" style="padding-top: 20px;">No es necesario actualizar la contraseña, sin embargo si desea hacerlo debe de ingresar una nueva contraseña y volver a ingresarla</p>
+                            	<p class="text-primary text-center" style="padding-top: 20px;">Si deseas actualiar contraseña, puedes hacerlo...</p>
                             </div>
                             <div class="col-xs-12 col-sm-6">
                                 <div class="form-group label-floating">
@@ -38,7 +38,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-center"><button type="submit" class="btn btn-primary btn-raised">Actualizar cuenta</button></p>
+                    <p class="text-center"><button type="submit" class="btn btn-primary btn-raised">Actualizacion de la cuenta</button></p>
                 </form>
             </div>
         </div>

@@ -4,11 +4,11 @@
 <ul class="breadcrumb" style="margin-bottom: 5px;">
     <li>
         <a href="configAdmin.php?view=product">
-            <i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp; Nuevo producto
+            <i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp; Nuevo Libro
         </a>
     </li>
     <li>
-        <a href="configAdmin.php?view=productlist"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp; Productos en tienda</a>
+        <a href="configAdmin.php?view=productlist"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp;Libros en tienda</a>
     </li>
 </ul>
 <div class="container">
@@ -30,13 +30,13 @@
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4">
                               <div class="form-group label-floating">
-                                <label class="control-label">Código de producto</label>
+                                <label class="control-label">Código de libro</label>
                                 <input type="text" class="form-control" value="<?php echo $prod['CodigoProd']; ?>" required maxlength="30" readonly name="prod-codigo">
                               </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4">
                               <div class="form-group label-floating">
-                                <label class="control-label">Nombre de producto</label>
+                                <label class="control-label">Nombre de libro</label>
                                 <input type="text" class="form-control" value="<?php echo $prod['NombreProd']; ?>" required maxlength="30" name="prod-name">
                               </div>
                             </div>
@@ -71,7 +71,7 @@
                               </div>
                             </div>
                             <div class="col-xs-12">
-                                <legend>Categoría, proveedor y estado</legend>
+                                <legend>Genero, proveedor y estado</legend>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4">
                               <div class="form-group">
@@ -144,13 +144,13 @@
                                         </button>
                                       </span>
                                   </div>
-                                    <p class="help-block">Formato de imágenes admitido png y jpg. Tamaño máximo 5MB</p>
+                                    <p class="help-block">Solo se permite un tamaño especial</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 <input type="hidden"  name="admin-name" value="<?php echo $_SESSION['nombreAdmin'] ?>">
-                <p class="text-center"><button type="submit" class="btn btn-success btn-raised">Actualizar producto</button></p>
+                <p class="text-center"><button type="submit" class="btn btn-success btn-raised">Actualizar libro</button></p>
                 </form>
             </div>
         </div>
